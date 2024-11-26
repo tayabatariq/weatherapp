@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather api</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div class="main">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+           <img src="weather-forecast.png" height="60vw"  class="navbar-brand" alt="">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" aria-disabled="true">Abou the App</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" aria-disabled="true">Usage Guide</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link  text-white" aria-disabled="true" href="#weateher">Search Weathers</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn  btn-outline-info">Sign UP</button>
+                <button type="button" class="btn  mx-2 btn-outline-info">Login</button>>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <header >
+      <div class="overlay"></div>
+      <div class="containert home-tx">
+        <h1>Stay Ahead with Accurate Weather Updates</h1>
+        <p>Discover real-time weather conditions, forecasts, and insights to plan your day with confidence. Whether it's sunny skies, unexpected rain, or chilly winds, we bring you reliable updates to keep you informed and prepared for whatever comes your way.</p>
+        <button type="button" class="btn btn-outline-info">View Forecast</button><button type="button" class="btn mx-5 btn-outline-info">Check Live Updates</button>
+      </div>
+      
+
+    </header>
+    <section id="weateher">
+      <h1>Search weather-forecast</h1>
+      <div class="container pt-3 ">
+        <div class="d-flex my-4" role="search">
+          <input class="form-control me-2 inputsearch" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn blue-color blue-background searchbtn text-white" type="submit">Search</button>
+        </div>
+        <div class="row  mb-3 text-center">
+         
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Weather for Faislabad</h4>
+              </div>
+              <div class="card-body weather-div">
+                <ul class="list-unstyled card-title mt-3 mb-4">
+                 <div class="weather-img"><img src="images/clear.png" alt="" class="img-weather"></div>
+                 <h2 class="my-1 temp">22°C</h2>
+                 <p class="city">Faislabad</p>
+                
+                </ul>
+                <div class="details">
+                  <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div class="col-footer">
+                      <p class="humidity">50%</p>
+                      <p>Humidity</p>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div class="col-footer">
+                      <p class="wind">15 km/h</p>
+                      <p>Wind speed</p>
+                    </div>
+                  </div>
+             </div>
+              </div>
+            </div>
+          </div>
+         
+        </div>
+       
+       </div>
+
+    </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
