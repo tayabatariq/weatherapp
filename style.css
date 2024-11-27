@@ -72,6 +72,9 @@ text-transform: none;
 
 
 }
+.home-tx .btn-outline-info a:hover{
+    color: #fff !important;
+}
 .home-tx .btn:hover{
     border-radius: 20px;
 }
@@ -79,7 +82,8 @@ text-transform: none;
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 }
 section{
-    min-height: 100vh;
+    height: 100vh;
+    min-height: fit-content;
     width: 100%;
 }
 section h1{
@@ -90,7 +94,7 @@ section h1{
     color: #fff;
 
 }
-.card , .table-responsive , th,td,table{
+.card {
     background-color: #46515f !important;
     color: #fff !important;
 }
@@ -135,4 +139,95 @@ section .btn:hover {
 .details{
     display: flex;
     flex-direction: column;
+}
+
+#about{
+    height: 100vh;
+    width: 100%;
+}
+#about h1{
+    color: #fff;
+    font-size: 3vw;
+}
+#about .cardabout {
+    background-color: #46515f !important;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.left-card{
+    width: 40%;
+    height: 100%;
+    background-image: url(about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+
+
+}
+.right-card{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+aside{
+    width: 100%;
+    min-height: fit-content;
+}
+
+
+/* faq  */
+.faqs-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 1rem;
+}.faq{
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    cursor: pointer;
+    transition:  all 1s ease;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #8a8a8a;
+}
+
+.faq.open {
+    max-height: 200px; 
+}
+
+.faq-icon i {
+    transition: transform 1s ease; 
+}
+
+.faq.open .faq-icon i {
+    transform: rotate(180deg); 
+}
+
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2;
+}.faq-icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+}.faq p{
+    padding: 2rem;
+    display: none;
+}.faq:hover{
+    box-shadow: 0 0 1rem rgba(247, 247, 247, 0.5);
+
+}  
+.faq.open p {
+    display: block !important;
+
 }

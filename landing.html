@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather api</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="weather-forecast.png" type="image/x-icon">
+    <link rel="stylesheet" href="responisve.css">
    
 </head>
 <body>
@@ -13,7 +18,7 @@
     <div class="container ">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-           <img src="weather-forecast.png" height="60vw"  class="navbar-brand" alt="">
+           <img src="weather-forecast.png" height="60vw"  class="navbar-brand " alt="">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -23,39 +28,39 @@
                     <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  text-white" aria-disabled="true">Abou the App</a>
+                    <a class="nav-link  text-white" aria-disabled="true" href="#about">About the App</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link  text-white" aria-disabled="true">Usage Guide</a>
+                    <a class="nav-link  text-white" aria-disabled="true" href="#usageapp">Usage Guide</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link  text-white" aria-disabled="true" href="#weateher">Search Weathers</a>
                   </li>
                 </ul>
-                <button type="button" class="btn  btn-outline-info">Sign UP</button>
-                <button type="button" class="btn  mx-2 btn-outline-info">Login</button>>
+                <button type="button" class="btn  btn-outline-info" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Sign UP</button>
+                <button type="button" class="btn  mx-2 btn-outline-info "data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>>
               </div>
             </div>
           </nav>
     </div>
     <header >
       <div class="overlay"></div>
-      <div class="containert home-tx">
-        <h1>Stay Ahead with Accurate Weather Updates</h1>
+      <div class="containert home-tx"  data-aos="fade-up">
+        <h1 >Stay Ahead with Accurate Weather Updates</h1>
         <p>Discover real-time weather conditions, forecasts, and insights to plan your day with confidence. Whether it's sunny skies, unexpected rain, or chilly winds, we bring you reliable updates to keep you informed and prepared for whatever comes your way.</p>
-        <button type="button" class="btn btn-outline-info">View Forecast</button><button type="button" class="btn mx-5 btn-outline-info">Check Live Updates</button>
+        <button type="button" class="btn btn-outline-info"><a href="#usageapp" style="text-decoration: none; color: #0FBADE;">View Guidance</a></button><button type="button" class="btn mx-5 btn-outline-info"><a href="#weateher" style="text-decoration: none; color: #0FBADE;">Check Live Updates</a></button>
       </div>
       
 
     </header>
     <section id="weateher">
-      <h1>Search weather-forecast</h1>
-      <div class="container pt-3 ">
+      <h1  data-aos="fade-up">Search weather-forecast</h1>
+      <div class="container pt-3 "  data-aos="fade-up">
         <div class="d-flex my-4" role="search">
           <input class="form-control me-2 inputsearch" type="search" placeholder="Search" aria-label="Search">
           <button class="btn blue-color blue-background searchbtn text-white" type="submit">Search</button>
         </div>
-        <div class="row  mb-3 text-center">
+        <div class="row  mb-3  text-center">
          
           <div class="col">
             <div class="card mb-4 rounded-3 shadow-sm">
@@ -63,13 +68,13 @@
                 <h4 class="my-0 fw-normal">Weather for Faislabad</h4>
               </div>
               <div class="card-body weather-div">
-                <ul class="list-unstyled card-title mt-3 mb-4">
-                 <div class="weather-img"><img src="images/clear.png" alt="" class="img-weather"></div>
+                <ul class="card-title   mb-4" data-aos="fade-right">
+                 <div class="weather-img"><img src="images/clouds.png" alt="" class="weatherimg"></div>
                  <h2 class="my-1 temp">22°C</h2>
                  <p class="city">Faislabad</p>
                 
                 </ul>
-                <div class="details">
+                <div class="details" data-aos="fade-left">
                   <div class="col">
                     <img src="images/humidity.png" alt="">
                     <div class="col-footer">
@@ -94,7 +99,215 @@
        </div>
 
     </section>
+    <article id="about" class="container">
+      <h1 class="text-center py-3" data-aos="fade-up"> About the App</h1>
+     <div class="cardabout  "  data-aos="zoom-in">
+      <div class="left-card"></div>
+      <div class="right-card">
+        <p class="card-text text-white px-4">Welcome to our Weather App — your ultimate source for real-time weather updates! This app is built to provide accurate and reliable weather information, ensuring you're always prepared for the day ahead.
+
+          Our intuitive design and visually appealing interface make it easy to check current conditions, including temperature, humidity, and more. With dynamic updates and detailed icons representing various weather conditions like clear skies, rain, snow, and haze, staying informed has never been easier.
+          
+          Whether you're planning your day or monitoring upcoming weather patterns, this app is your trusted companion for all things weather-related.
+          
+          Stay informed, stay prepared — experience the difference today!</p>
+      </div>
+
+     </div>
+      
+
+    </article>
+    <aside id="usageapp" class=" text-center">
+<h1 class=" text-white py-5" style="text-transform: uppercase; font-size: 3vw;" data-aos="zoom-in">Explore, Customize, and Stay Informed</h1>
+      <!-- answe question strnatcasecmp -->
+ <section class="faqs text-white py-2">
+  <h2 data-aos="fade-up">Frequestly Asked Question</h2>
+  <div class="container faqs-container py-3">
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>Interactive Tutorial</h4>
+              <p> Add a short interactive guide showing users how to make the most of your weather app. This could highlight features like location search, viewing detailed forecasts, or using any additional functionalities like wind speed or radar images</p>
+          </div>
+      </article>
+
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>Frequently Asked Questions (FAQ)</h4>
+              <p> Include a small FAQ section addressing common user queries. For instance, explain how to interpret weather data, what the symbols mean, or how to customize setting</p>
+          </div>
+      </article>
+
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>Tips & Best Practices</h4>
+              <p>Offer users helpful tips on how to optimize the app's features. For example, guide them on how to set up location-based notifications for weather alerts or how to switch between Celsius and Fahrenheit</p>
+          </div>
+      </article>
+
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>Data Usage Info</h4>
+              <p> Since it's a weather app, users may want to know how much data they’re consuming. Provide an estimate or setting where they can limit data usage for updates. This could be a toggle for 'Low Data Mode'</p>
+          </div>
+      </article>
+
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>Weather-Related Resources</h4>
+              <p>Include links to helpful resources, such as articles on weather patterns, safety tips for extreme weather, or news updates about weather event</p>
+          </div>
+      </article>
+
+      <article class="faq" data-aos="fade-up">
+          <div class="faq-icon">
+          <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="question-answer">
+              <h4>How to Use the Weather App</h4>
+              <p>Stay prepared with our easy-to-use weather app. Get accurate forecasts, track updates, and set alerts to plan your day with confidence.</p>
+          </div>
+      </article>
+
+  </div>
+</section>
+<!-- end of question -->
+
+    </aside>
+    <!-- sign up page start -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Sign up </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="row g-3 needs-validation" novalidate>
+          <div class="col-md-12">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01"  required placeholder="Enter your First Name...">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02"  required placeholder="Enter your Last Name... ">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustomUsername" class="form-label">Email</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Enter your Email...">
+              <div class="invalid-feedback">
+                Please choose a email.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Enter your password...">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="invalid-feedback">
+              Please provide a correct password.
+            </div>
+          </div>
+          <div class="col-md-12">
+            <label for="validationCustom02" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="validationCustom02"  required placeholder="Enter your Number... ">
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
 </div>
+     <!-- sign up page aria-expanded -->
+
+
+
+
+     <!-- login page modal start -->
+   
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Login </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="col-md-12">
+          <label for="validationCustomUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required placeholder="Enter your Email...">
+            <div class="invalid-feedback">
+              Please choose a email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 py-2">
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Enter your password...">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="invalid-feedback">
+            Please provide a correct password.
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- login page modal aria-expanded -->
+</div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
