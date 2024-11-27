@@ -312,5 +312,47 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
+<script>
+  
+// nav faq 
+function openfaq(){
+    // Frequently Asked Questions
+const faqs = document.querySelectorAll(".faq");
+
+faqs.forEach(faq => {
+    faq.addEventListener('click', () => {
+        // Toggle the 'open' class
+        faq.classList.toggle('open');
+        
+        // Change the icon class
+        const icon = faq.querySelector('.faq-icon i');
+        if (icon.className === "fa-solid fa-plus") {
+            icon.className = "fa-solid fa-minus";
+        } else {
+            icon.className = "fa-solid fa-plus";
+        }
+    });
+});
+}
+openfaq();
+
+
+// aoslibrary
+   
+AOS.init({
+    offset: 250,
+  
+    duration: 2000,
+    container: '.scroll-container',
+
+    
+}) 
+$(window).on("scroll", function () {
+        AOS.init();
+    });
+
+//    end AOS
+
+</script>
 
 </body>
